@@ -53,10 +53,67 @@
 
 .input-wrapper{
   padding: 20px 25px;
+  justify-content: center;
+  display: flex;
 }
-.input-wrapper input{
-  width: 300px;
-  height: 30px;
+
+body, input{
+  font-family: Nunito, sans-serif;
+}
+
+.main-body .principal .input-wrapper .cityInput {
+  width: 70%;
+  height: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  background: none;
+  padding: 10px 10px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  grid-area: principal;
+}
+
+.secondary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  width: 100%;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "principal secondary";
+  grid-gap: 10px;
+}
+
+.principal .input-wrapper .searchButton{
+  color: #fff;
+  background-color: aqua ;
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 12px;
+  font-size: 22px;
+  margin-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .2s;
 }
 /*
 .App-link {
