@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { logo, background } from './assets/img/imports';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h4>Weather App</h4>
+        <div className='App-logo'><img src={logo}></img></div>
       </header>
+      <main className='main-body'>
+        <div class="input-wrapper">
+          <input placeholder="Enter a city name" type="text" name="city" class="cityInput" autocomplete="off" value=""></input>
+          <button type="submit" class="fa fa-search"></button>
+        </div>
+      </main>
     </div>
   );
 }
