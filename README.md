@@ -13,7 +13,7 @@
 
 ## Installation
 1. Clone the repository:
-   git clone https://github.com/yourusername/weather-application.git
+   git clone [https://github.com/yourusername/weather-application.git](https://github.com/mr-vbharadwaj/weather_vb.git)
 
 2. Navigate to the project directory:
    cd weather_vb
