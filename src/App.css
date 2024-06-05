@@ -1,16 +1,4 @@
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App{
+.App {
   background-image: url(./assets/img/background.jpg);
   background-size: cover;
   min-height: 100vh;
@@ -23,41 +11,39 @@
   margin-left: 250px;
 }
 
-/* .App-logo{
-  max-height: 40px;
-  max-width: 60px;
-  margin-top: 50px;
-} */
-
-.App-header img{
+.App-header img {
   max-height: 40px;
   max-width: 50px;
   padding: 0 15px;
   margin-top: 75px;
 }
 
-.App-header h4{
-  margin-top: 75px;
+.App-header h4 {
+  margin-top: 85px;
   margin-bottom: 20px;
   padding: 0;
 }
 
-.main-body{
+.main-body {
   height: 500px;
   width: 900px;
-  margin: 0 250px;
+  margin: 0 300px;
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(15px);
   border-radius: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.input-wrapper{
+.input-wrapper {
   padding: 20px 25px;
   justify-content: center;
   display: flex;
+  margin-top: 20px;
 }
 
-body, input{
+body,
+input {
   font-family: Nunito, sans-serif;
 }
 
@@ -73,7 +59,6 @@ body, input{
   font-size: 16px;
 }
 
-
 .principal {
   width: 100%;
   display: flex;
@@ -83,25 +68,18 @@ body, input{
   grid-area: principal;
 }
 
-.secondary {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr;
-  width: 100%;
-}
-
-.content {
+/* .content {
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "principal secondary";
   grid-gap: 10px;
-}
+} */
 
-.principal .input-wrapper .searchButton{
+.principal .input-wrapper .searchButton {
   color: #fff;
-  background-color: aqua ;
+  background-color: aqua;
   height: 48px;
   width: 48px;
   border: none;
@@ -113,18 +91,115 @@ body, input{
   align-items: center;
   cursor: pointer;
   outline: none;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
-/*
-.App-link {
-  color: #61dafb;
-} */
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.weatherData{
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.data{
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+ .App {
+    background-size: cover;
+    min-height: 90vh;
   }
-  to {
-    transform: rotate(360deg);
+
+ .App-header {
+    font-size: calc(8px + 2vmin);
+    margin-left: 150px;
   }
-} */
+
+ .App-header img {
+    max-height: 35px;
+    max-width: 45px;
+    margin-top: 60px;
+  }
+
+ .App-header h4 {
+    margin-top: 70px;
+  }
+
+ .main-body {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px);
+  }
+
+ .input-wrapper {
+    padding: 15px 20px;
+  }
+
+ .main-body.principal.input-wrapper.cityInput {
+    width: 95%; 
+    height: 20px; 
+  }
+
+ .principal {
+    align-items: center;
+  }
+
+ .principal.input-wrapper.searchButton {
+    height: 36px;
+    width: 36px;
+  }
+
+ .weatherData,.data {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .App {
+    min-height: 80vh;
+  }
+
+ .App-header {
+    font-size: calc(6px + 2vmin); 
+    margin-left: 100px;
+  }
+
+ .App-header img {
+    max-height: 30px;
+    max-width: 40px;
+    margin-top: 55px;
+  }
+
+ .App-header h4 {
+    margin-top: 65px; 
+  }
+
+ .main-body {
+    width: 90%; 
+  }
+
+ .input-wrapper {
+    padding: 10px 15px; 
+  }
+
+ .main-body.principal.input-wrapper.cityInput {
+    width: 100%; 
+    height: 18px; 
+  }
+
+ .principal {
+    justify-content: center;
+  }
+
+ .principal.input-wrapper.searchButton {
+    height: 32px; 
+    width: 32px;
+  }
+
+ .weatherData,.data {
+    font-size: 12px; 
+  }
+}
+
